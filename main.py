@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import mysql.connector
 
+
 # Replace sensitive information with placeholders
 mydb = mysql.connector.connect(
     host="YOUR_DB_HOST",
