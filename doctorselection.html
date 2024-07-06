@@ -7,9 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #152c3d;
             margin: 0;
             padding: 0;
+            color:000;
             box-sizing: border-box;
         }
 
@@ -17,7 +18,7 @@
             max-width: 700px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color:#fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center
@@ -27,10 +28,9 @@
             display: inline-block;
             margin: 5px;
             padding: 10px 20px;
-            border: 2px solid #4CAF50;
             border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #152c2d;
+            color: #fff;
             text-align: center;
             text-decoration: none;
             font-size: 16px;
@@ -51,6 +51,7 @@
     <div style="padding-top:200px"></div>
     <div class="container">
         <h1>Doctors Selection</h1>
+        <br>
         <form id="doctorForm" action="/appointments" method="POST">
             {% for doctor in lst %}
                 <button type="submit" class="doctor-button" name="name" value="{{ doctor }}">{{ doctor }}</button>
