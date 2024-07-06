@@ -9,11 +9,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #152c3d;
+            color:#fff;
         }
         
         header {
-            background-color: #333;
+            background-color: #152c3d;
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -34,6 +35,7 @@
         }
         
         .medicine {
+            border-radius:20px;
             border: 1px solid #ccc;
             margin: 10px;
             width: 300px;
@@ -44,12 +46,6 @@
         
         .medicine:hover {
             transform: translateY(-5px);
-        }
-        
-        .medicine img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
         }
         
         .medicine-info {
@@ -63,7 +59,7 @@
         }
         
         .medicine p {
-            color: #666;
+            color: #000;
             margin-bottom: 10px;
         }
         
@@ -72,7 +68,7 @@
         }
         
         .add-to-cart button {
-            background-color: #4CAF50;
+            background-color: #152c3d;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -82,7 +78,7 @@
         }
         
         .add-to-cart button:hover {
-            background-color: #45a049;
+            background-color: #152c3d;
         }
         
         form {
@@ -99,7 +95,7 @@
         }
         
         form button[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #152c3d;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -109,7 +105,7 @@
         }
         
         form button[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #000;
         }
     </style>
 </head>
@@ -122,7 +118,7 @@
         <h4>{{item}}</h4>
         {% endfor %}
         <p>Price: Rs. {{total}}</p>
-        <button type="submit">Place Order</button>
+        <button style="background-color:#fff; color:#000;" type="submit">Place Order</button>
     </form>
     <form action="/addtocart" method="POST">
         <div class="container">
