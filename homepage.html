@@ -96,6 +96,12 @@
             color:black;
             background-color:#e6e6e9;
         }
+        .chatnow{
+            color:black;
+            background-color:white;
+            padding:10px;
+            text-decoration:none;
+        }
     </style>
 </head>
 <body>
@@ -126,9 +132,10 @@
     <script async src="https://cse.google.com/cse.js?cx=572dcbd817c274965"></script>
     <br><br>
     <div class="container" id="chat">
-    <form action="/chatinterface" method="POST" class="section1" style="text-align:center; background-color:#152c3d ; color:white">
+    <form method="POST" class="section1" style="text-align:center; background-color:#152c3d ; color:white">
         <h1>Chat With Our Doctors</h1>
-        <button type="submit">Chat Now</button>
+        <br>
+        <a class="chatnow" href="http://127.0.0.1:5000/chatinterface" target="_blank">Chat Now</a>
     </form>
     </div>
 
@@ -167,8 +174,9 @@
           <p>Welcome to our hospital's online medicine facility! With our cutting-edge digital platform, you can access a comprehensive range of medical services from the comfort of your own home.</p>
           <p>At our hospital, we are committed to providing high-quality, accessible healthcare services, and our online medicine facility is designed to make managing your health easier and more convenient than ever before.</p>
           <form action="/shop" method="POST">
-            <button type="submit">Explore Now</button>
-          </form>
+            <br>
+            <a class="chatnow" href="http://127.0.0.1:5000/shop" target="_blank">Explore Now</a>
+        </form>
         </section>
       </div>
       <br>
